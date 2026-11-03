@@ -15,7 +15,7 @@ This case documents a hands-on troubleshooting exercise performed on a personal 
 
 An Event Viewer warning was identified under:
 
-**Windows Logs → System**
+**Windows Logs > System**
 
 - **Source:** Time-Service
 - **Event ID:** 134
@@ -36,6 +36,7 @@ The following checks were performed:
 | NTP peers | `w32tm /query /peers` | Configured peer found |
 | NTP connectivity | `w32tm /stripchart /computer:time.windows.com /samples:5 /dataonly` | Five NTP responses received |
 | NTP configuration | `w32tm /query /configuration` | NTP client enabled; configured source: `time.windows.com,0x9` |
+| Network profile | `Get-NetConnectionProfile` | Personal mobile hotspot; IPv4 connectivity available |
 | Time zone | `Get-TimeZone` | Georgian Standard Time (UTC+04:00) |
 
 ## 4. Root Cause Assessment
@@ -64,7 +65,7 @@ The final output confirmed:
 
 | Parameter | Final Result |
 |---|---|
-| Leap Indicator | 0 — No warning |
+| Leap Indicator | 0 - No warning |
 | Stratum | 5 |
 | Last Successful Sync | November 3, 2026, 16:11:38 |
 | Time Source | `time.windows.com,0x9` |
@@ -76,6 +77,7 @@ The final status confirmed successful time synchronization.
 
 - `01-Before-Synchronization.png` - Initial unsynchronized Windows Time Service status.
 - `02-After-Synchronization.png` - Successful synchronization status after remediation.
+- `INC-002-Windows-Time-Synchronization-Troubleshooting-Demo.mp4` - Video demonstration of the troubleshooting workflow, diagnostic checks, and synchronization recovery.
 
 ## 8. Limitations
 
