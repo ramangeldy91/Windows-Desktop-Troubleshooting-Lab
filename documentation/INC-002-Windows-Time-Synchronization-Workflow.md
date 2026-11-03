@@ -108,7 +108,7 @@ The investigation followed a least-change approach: collect evidence first, iden
 
 
 
-`Event Viewer в†’ Windows Logs в†’ System`
+`Event Viewer > Windows Logs > System`
 
 
 
@@ -676,6 +676,7 @@ Evidence is stored in:
 
 - `Evidence-Report.md` - Diagnostic findings and execution evidence.
 
+- `INC-002-Windows-Time-Synchronization-Troubleshooting-Demo.mp4` - Video demonstration of the troubleshooting workflow and synchronization recovery.
 
 
 ---
