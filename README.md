@@ -58,6 +58,8 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 
 **Evidence and report:** [INC-002 Evidence](evidence/INC-002-Time-Service/)
 
+**Troubleshooting Demo Video:** [Watch INC-002 Demo](evidence/INC-002-Time-Service/INC-002-Windows-Time-Synchronization-Troubleshooting-Demo.mp4)
+
 This was a practical troubleshooting exercise on a personal laptop. The initial DNS failure was not conclusively attributed to a specific underlying cause.
 
 ## Project Structure
