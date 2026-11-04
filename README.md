@@ -31,17 +31,18 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 
 ## Troubleshooting Scenarios
 
+### Planned Scenarios
+
 1. Computer Performance
 2. Windows Update
 3. Disk Space & Storage
 4. Application Troubleshooting
 5. User Profile Issues
 6. Basic Windows Diagnostics
-7. Windows Time Synchronization
 
-## Completed Troubleshooting Cases
+### Completed Cases
 
-### INC-002 — Windows Time Synchronization
+- INC-002 - Windows Time Synchronization
 
 **Issue:** Event Viewer recorded a Time-Service warning (Event ID 134) indicating a DNS name resolution failure for `time.windows.com`.
 
@@ -49,7 +50,9 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 - Checked DNS resolution.
 - Verified Windows Time Service status.
 - Inspected NTP configuration and synchronization status.
-- Tested NTP server responses.
+- Tested NTP server responses using `w32tm /stripchart`.
+- Reviewed the Windows network profile and connectivity.
+- Compared TCP port testing with NTP server response testing over UDP.
 - Reviewed the Windows time zone configuration.
 
 **Resolution:** Executed `w32tm /resync /rediscover` in an elevated PowerShell session.
@@ -65,7 +68,7 @@ This was a practical troubleshooting exercise on a personal laptop. The initial 
 ## Project Structure
 
 - `scenarios/` - Practical troubleshooting scenarios.
-- `documentation/` - Procedures and troubleshooting guides.
+- `documentation/` - Procedures, troubleshooting guides, and incident workflows.
 - `evidence/` - Diagnostic screenshots and test reports.
 - `scripts/` - PowerShell diagnostic scripts.
 
