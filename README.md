@@ -24,8 +24,10 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 - PowerShell
 - Command Prompt (CMD)
 - Task Manager
+- Resource Monitor
 - Device Manager
 - Event Viewer
+- Reliability Monitor
 - Windows Settings
 - Windows Time Service (W32Time)
 
@@ -33,16 +35,40 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 
 ### Planned Scenarios
 
-1. Computer Performance
-2. Windows Update
-3. Disk Space & Storage
-4. Application Troubleshooting
-5. User Profile Issues
-6. Basic Windows Diagnostics
+1. Windows Update
+2. Disk Space & Storage
+3. Application Troubleshooting
+4. User Profile Issues
+5. Basic Windows Diagnostics
 
 ### Completed Cases
 
-- INC-002 - Windows Time Synchronization
+#### INC-001 - Computer Performance Troubleshooting
+
+**Scenario type:** Simulated Help Desk L1 troubleshooting exercise.
+
+**Issue:** A user reported slow application performance and intermittent system freezes affecting multiple applications.
+
+**Diagnostics covered:**
+- Task Manager resource utilization analysis.
+- Resource Monitor process-level disk activity investigation.
+- Event Viewer investigation.
+- Reliability Monitor review.
+- Evaluation of CPU, memory, and disk-related symptoms.
+- Assessment of Microsoft Defender Antivirus activity.
+
+**Preliminary assessment:** The synthetic diagnostic results suggested a possible disk I/O bottleneck. Microsoft Defender Antivirus was identified as a process requiring further investigation, but its activity was not established as the root cause.
+
+**Documentation:**
+- [Incident Scenario](scenarios/INC-001-Computer-Performance/Incident-Scenario.md)
+- [Troubleshooting Workflow](scenarios/INC-001-Computer-Performance/Troubleshooting-Workflow.md)
+- [Diagnostic Results](scenarios/INC-001-Computer-Performance/Diagnostic-Results.md)
+
+**Important limitation:** This is a simulated scenario. All diagnostic values and findings are synthetic and do not represent measurements from an actual corporate workstation or the personal laptop.
+
+#### INC-002 - Windows Time Synchronization
+
+**Scenario type:** Practical troubleshooting exercise on a personal Windows 11 laptop.
 
 **Issue:** Event Viewer recorded a Time-Service warning (Event ID 134) indicating a DNS name resolution failure for `time.windows.com`.
 
@@ -63,7 +89,7 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 
 **Troubleshooting Demo Video:** [Watch INC-002 Demo](evidence/INC-002-Time-Service/INC-002-Windows-Time-Synchronization-Troubleshooting-Demo.mp4)
 
-This was a practical troubleshooting exercise on a personal laptop. The initial DNS failure was not conclusively attributed to a specific underlying cause.
+**Important limitation:** The initial DNS failure was not conclusively attributed to a specific underlying cause. Successful synchronization was confirmed, but permanent resolution of the original transient issue was not established.
 
 ## Project Structure
 
