@@ -60,11 +60,11 @@ The user experiences intermittent system freezes that disrupt daily tasks and ac
 
 
 
-4\. Reviewed Windows System and Application event logs for recurring errors and warnings associated with the reported performance degradation.
+4\. Reviewed the simulated Windows System and Application event log findings. Repeated disk-related System warnings were identified, but exact event sources, Event IDs, and underlying conditions require further investigation.
 
 
 
-5\. Considered physical storage health as an additional diagnostic area. No confirmed physical disk failure was established in the initial scenario.
+5\. Identified physical storage health as an area requiring further investigation. No physical disk health assessment or confirmed hardware failure was established in the initial scenario.
 
 
 
