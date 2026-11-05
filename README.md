@@ -80,7 +80,6 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 - Tested NTP server responses using `w32tm /stripchart`.
 - Reviewed the Windows network profile and connectivity.
 - Compared TCP port testing with NTP server response testing over UDP.
-- Reviewed the Windows time zone configuration.
 
 **Resolution:** Executed `w32tm /resync /rediscover` in an elevated PowerShell session.
 
@@ -97,7 +96,7 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 - `scenarios/` - Practical troubleshooting scenarios.
 - `documentation/` - Procedures, troubleshooting guides, and incident workflows.
 - `evidence/` - Diagnostic screenshots and test reports.
-- `scripts/` - PowerShell diagnostic scripts.
+- `scripts/` - Reserved for future PowerShell diagnostic scripts.
 
 ## Scope & Safety
 
