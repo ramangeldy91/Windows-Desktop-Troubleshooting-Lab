@@ -63,6 +63,7 @@ All incidents are clearly identified as either simulated scenarios or actual obs
 - [Incident Scenario](scenarios/INC-001-Computer-Performance/Incident-Scenario.md)
 - [Troubleshooting Workflow](scenarios/INC-001-Computer-Performance/Troubleshooting-Workflow.md)
 - [Diagnostic Results](scenarios/INC-001-Computer-Performance/Diagnostic-Results.md)
+- [L1 Escalation Report](scenarios/INC-001-Computer-Performance/L1-Escalation-Report.md)
 
 **Important limitation:** This is a simulated scenario. All diagnostic values and findings are synthetic and do not represent measurements from an actual corporate workstation or the personal laptop.
 
