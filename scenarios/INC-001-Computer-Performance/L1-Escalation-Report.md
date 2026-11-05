@@ -32,7 +32,7 @@ The user reports significant system performance degradation on a Windows 11 work
 
 
 
-Synthetic diagnostic results indicate sustained Disk Active Time of 100%, average disk response times ranging from 500 to 600 ms, and an elevated disk queue length. These findings suggest a potential disk I/O bottleneck.
+Synthetic diagnostic results indicate that Disk Active Time reached 100% during the reported freezes. This suggests a potential disk I/O bottleneck. Disk response time and disk queue behavior require further investigation, as no measured values for these metrics are currently available.
 
 
 
@@ -52,7 +52,7 @@ The user experiences intermittent system freezes that disrupt daily tasks and ac
 
 
 
-2\. Analyzed disk performance using Resource Monitor. Synthetic diagnostic results showed sustained Disk Active Time of 100%, elevated Disk Queue Length, and average response times ranging from 500 to 600 ms.
+2\. Analyzed disk performance using Resource Monitor. Synthetic diagnostic results showed Disk Active Time reaching 100% during the reported freezes. Disk response time and queue behavior were identified as areas requiring further investigation; no measured values were available in the initial scenario.
 
 
 
@@ -71,8 +71,11 @@ The user experiences intermittent system freezes that disrupt daily tasks and ac
 \## 3. Actions Taken
 
 
+The following actions represent the proposed L1 response in this simulated scenario.
 
-1\. Informed the user about the ongoing background Windows update installation and explained its potential impact on system performance.
+
+
+1\. Reviewed the user's report that Windows updates had been installed the previous day and considered this recent change as a possible contributing factor.
 
 
 
@@ -84,11 +87,11 @@ The user experiences intermittent system freezes that disrupt daily tasks and ac
 
 
 
-4\. Monitored system behavior during the update process and planned post-installation validation of disk performance metrics.
+4\. Recommended checking for any remaining update-related background activity and validating disk performance after it subsides.
 
 
 
-5\. Initiated escalation to L2 Support for advanced storage diagnostics, further investigation of the potential disk I/O bottleneck, and appropriate data protection measures.
+5\. Prepared the escalation report for L2 Support, including the available diagnostic findings, unresolved questions, and recommended follow-up actions.
 
 
 
@@ -100,7 +103,7 @@ The user experiences intermittent system freezes that disrupt daily tasks and ac
 
 
 
-The available diagnostic results suggest a potential disk I/O bottleneck associated with sustained high disk activity and elevated response times. Background activity from Windows Update and Microsoft Defender may have contributed to the observed disk load.
+The available diagnostic results suggest a potential disk I/O bottleneck associated with Disk Active Time reaching 100% during the reported freezes. Among the processes listed in the simulated Resource Monitor snapshot, Microsoft Defender generated the highest disk throughput. This makes it a candidate for further investigation, but its direct contribution to the reported freezes has not been established.
 
 
 
@@ -108,7 +111,7 @@ The available diagnostic results suggest a potential disk I/O bottleneck associa
 
 
 
-The direct contribution of individual processes to the reported system freezes has not been established. The available evidence is insufficient to confirm a physical storage failure or identify a single root cause.
+The available evidence is insufficient to confirm a physical storage failure or identify a single root cause.
 
 
 
@@ -124,11 +127,7 @@ L2 Support should perform advanced storage diagnostics, review relevant disk and
 
 
 
-This incident is being escalated because further investigation requires advanced storage diagnostics beyond the current L1 troubleshooting scope.
-
-
-
-Sustained high disk activity, elevated response times, and intermittent system freezes indicate a potential storage-related issue. Since the underlying cause remains unconfirmed and there may be a risk to user data, L2 Support is required to perform advanced diagnostics and determine appropriate data protection measures.
+This incident is being escalated because Disk Active Time reached 100% during the reported freezes, indicating a potential storage-related issue. Further investigation requires advanced diagnostics beyond the current L1 troubleshooting scope, including measurement of disk response times and queue behavior.
 
 
 
